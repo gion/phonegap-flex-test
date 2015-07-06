@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phonegap display:flex test</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div data-debug="main-wrapper" class="main-wrapper full-width full-height pos-absolute flex-container flex-col overflow-hidden">
+      <div data-debug="partial-wrapper" class="partial-wrapper flex-container flex-row flex-item">
+        <div data-debug="wrapper" class="wrapper flex-container flex-col flex-item">
+          <header data-debug="header" class="header flex-item flex-item-auto"></header>
+          <div data-debug="container" class="my-container flex-container flex-row flex-item">
+            <aside data-debug="left-sidebar" class="left-sidebar flex-container flex-col flex-item flex-item-auto">
+              <header data-debug="left-sidebar-header" class="left-sidebar-header flex-item flex-item-auto"></header>
+              <section data-debug="left-sidebar-content" class="left-sidebar-content flex-item"></section>
+            </aside>
+            <main data-debug="content" class="content flex-container flex-col flex-item">
+              <section data-debug="content-header" class="content-header flex-item flex-item-auto"></section>
+              <section data-debug="scrollable-content" class="scrollable-content flex-item overflow-scroll"></section>
+            </main>
+          </div>
+        </div>
+        <aside data-debug="right-sidebar" class="right-sidebar flex-container flex-col flex-item flex-item-auto">
+          <header data-debug="right-sidebar-header" class="right-sidebar-header flex-item flex-item-auto"></header>
+          <div data-debug="right-sidebar-content" class="right-sidebar-content flex-item"></div>
+        </aside>
+      </div>
+      <footer data-debug="footer" class="flex-item flex-item-auto"></footer>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
