@@ -9,3 +9,9 @@ function start() {
   });
   */
 }
+
+
+
+$(document).ready(function() {
+  alert('we\'ve made it, son!');
+});
